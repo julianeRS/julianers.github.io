@@ -42,7 +42,7 @@ Suppressing author names, adding page numbers, ..., are possible with additional
 <h3>Formatted references and bibliography</h3>
 <p> To print a full formatted reference (as we may wish to do to display all lab publications), use the <i>reference</i> tag:
   </p><p>
-  {% raw %}{% reference bibentry %}{% endraw %}
+    <code>{% raw %}{% reference bibentry %}{% endraw %}</code>
 </p><p>
   This will produce a full bibliography entry:
   <br>
@@ -52,7 +52,7 @@ Suppressing author names, adding page numbers, ..., are possible with additional
 <p> The full bibliography file, or all cited entries, can be printed with the <i>bibliography</i> command. Bibliography and citation styles can be changed with user-specified .css files.
 </p>
 <p>
-{% raw %}{% bibliography --cited %}{% endraw %}
+  <code>{% raw %}{% bibliography --cited %}{% endraw %}</code>
 </p><p>
 {% bibliography --cited %}
 
