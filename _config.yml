@@ -244,8 +244,8 @@ whitelist:
 
 scholar:
  - style: apa
- - source: _bibliographies/
- - bibliography: _bibliographies/default.bib
+ - source: /_bibliographies/
+ - bibliography: default.bib
  
  
 # Archives
