@@ -26,32 +26,33 @@ pages on the wbsite and more using commands similar to LaTeX citation commands.
   <h3>In-text citations</h3>
 <p>
 To cite entries from the source .bib file, you can use the following base command:
-  <br>
-  {% raw %}{% cite bibentry %}{% endraw %}
-  <br>
+  </p><p>
+  <code>{% raw %}{% cite bibentry %}{% endraw %}</code>
+  </p><p>
   This will result in a citation like this: {% cite schwab_2020 %}
 </p>
 <p>
   You can cite multiple items in a single citation by referencing all ids of the items you wish to quote separated by spaces. For example, 
  <code>{% raw %}{% cite example1 example2 % }{% endraw %}</code> would produce something like this:
-  <br>
+  </p><p>
   {% cite schwab_2020 schwab_processing_2022%}
 </p>
 Suppressing author names, adding page numbers, ..., are possible with additional specifiers in the <i>cite</i> command. See the readme file linked above.  
   
 <h3>Formatted references and bibliography</h3>
 <p> To print a full formatted reference (as we may wish to do to display all lab publications), use the <i>reference</i> tag:
-  <br>
+  </p><p>
   {% raw %}{% reference bibentry %}{% endraw %}
-<br>
-  This will produce a full bibliography entry like so:
+</p><p>
+  This will produce a full bibliography entry:
   <br>
   {% reference schwab_processing_2022 %}
   
   <h3>Bibliography</h3>
-<p> The full bibliography file, or all cited entries, can be printed with the <i>bibliography</i> command. Bibliography and citation styles can be changed with user-specified .css files.</p>
-
+<p> The full bibliography file, or all cited entries, can be printed with the <i>bibliography</i> command. Bibliography and citation styles can be changed with user-specified .css files.
+</p>
+<p>
 {% raw %}{% bibliography --cited %}{% endraw %}
-<br>
+</p><p>
 {% bibliography --cited %}
 
