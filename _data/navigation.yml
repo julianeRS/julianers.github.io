@@ -10,6 +10,8 @@ main:
     url: /teaching/
   - title: "CV"
     url: /pdf/JSchwab_CV.pdf
+  - title: "Examples for Jekyll-scholar plugin"
+    url: /examples-scholar
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
