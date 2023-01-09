@@ -242,10 +242,10 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-scholar:
- - style: apa
- - source: /_bibliographies/
- - bibliography: default.bib
+#scholar:
+# - style: apa
+# - source: ./_bibliography/
+# - bibliography: references.bib
  
  
 # Archives
