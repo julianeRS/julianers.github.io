@@ -242,7 +242,12 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
+scholar:
+ - style: apa
+ - source: ./bibliographies
+ - bibliography: ./bibliographies/default.bib
+ 
+ 
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
