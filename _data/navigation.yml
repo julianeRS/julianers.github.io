@@ -2,14 +2,6 @@
 main:
   - title: "About"
     url: https://julianeschwab.github.io/
-  - title: "Talks and posters"
-    url: /conferences/
-  - title: "Publications"
-    url: /publications/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "CV"
-    url: /pdf/JSchwab_CV.pdf
   - title: "Examples for Jekyll-scholar plugin"
     url: /examples-scholar
   # - title: "Sample Collections"
