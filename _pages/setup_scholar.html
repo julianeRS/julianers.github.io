@@ -17,12 +17,40 @@ author_profile: true
 
 <p>To add Jekyll-scholar to your website, you must update the Gemfile (<i>Gemfile</i>) and the configuration file (<i>_config.yml</i>) in your main website repository.
 </p>
-<p><b>Changes to Gemfile</b><br>Add the following line of code: <code>gem 'jekyll-scholar', group: jekyll_plugins</code></p>
+<p><b>Changes to Gemfile</b><br>Add the following line of code:<br>
+  <code>gem 'jekyll-scholar', group: jekyll_plugins</code></p>
 
-<p><b>Changes to configuration file</b><br>Add the following lines of code: <code>plugins:<br>&nsbp;- jekyll-scholar</code></p>
+<p>
+  <b>Changes to configuration file</b><br>Add the following lines of code:<br> 
+  <pre>
+    <code>
+      plugins:
+        - jekyll-scholar
+     </code>
+  </pre>
+</p>
 
 <h3>Step 2: Set up github action</h3>
 
-<p>For security reasons, github does not, by default, allow the loading of just any kind of Jekyll plugin when building your website. 
-The solution is to set up a continuous integration pipeline to build the site on each push and publish the build output on the master branch.
-GitHub Actions allow us to do just that. We define our own build action
+<p>
+  For security reasons, github does not, by default, allow the loading of just any kind of Jekyll plugin when building your website. 
+  The solution is to set up a continuous integration pipeline to build the site on each push and publish the build output on the master branch.
+  GitHub Actions allow us to do just that. We define our own build action in the following steps: 
+</p>
+  
+<p>
+  <b>Generate a new <i>source</i> branch</b>: Generate a branch called <i>source</i> to which you move all files currently located on the <i>main/master</i> branch.
+</p>
+<p>
+  <b>Add your new Github action</b>: On your <i>sourcce</i> branch, create a new folder called <i>.github/workflows</i>. Within that folder, create a new file called <i>build.yml</i>.<br>
+  Copy the contents of <a href="https://github.com/julianeRS/julianers.github.io/blob/source/.github/workflows/build.yml"><b>htis file</b></a> into it.<br>
+  You may have to adapt this code by updating the Ruby version (line 19).
+</p>  
+
+  <h3>Step 3: Configure citations with Jekyll-scholar</h3>
+  <p>By default, Jekyll-scholar expects to find a bibliography file called <i>references.bib</i> in a <i>_bibliography</i> folder of your <i>source</i> branch.
+   If necessary, we can override these settings by changing the plugin settings in the <i>_config.yml</i> file (see the readme</b> at 
+   <a href="https://github.com/inukshuk/jekyll-scholar"><b>https://github.com/inukshuk/jekyll-scholar</b></a>). For now, we will just keep it like that.</p>
+
+<p><b>Add your .bib file</b>: Create a new folder <i>_bibliography</i> containing a file <i>references.bib</i>. From now on, you can use Jekyll-scholar commands as indicated in the
+  {% link _pages/example_use_scholar.html %}.
