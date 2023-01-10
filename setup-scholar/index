@@ -277,6 +277,16 @@
 <html>
 <section>
 
+<p>The following instructions presuppose that you already have a functioning website buil using Jekyll and github-pages.</p>
+
+<h3>Step 1: Include jekyll-scholar as plugin</h3>
+
+<p>To add Jekyll-scholar to your website, you must update the Gemfile (<i>Gemfile</i>) and the configuration file (<i>_config.yml</i>) in your main website repository.
+</p>
+<p><b>Changes to Gemfile</b><br>Add the following line of code: <code>gem 'jekyll-scholar', group: jekyll_plugins</code></p>
+
+<p><b>Changes to configuration file</b><br>Add the following lines of code: <code>plugins:<br>&nsbp;- jekyll-scholar</code></p>
+
         
       </section>
 
