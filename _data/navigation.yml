@@ -2,6 +2,8 @@
 main:
   - title: "About"
     url: https://julianers.github.io/
+  - title: "Setting up the Jekyll-scholar plugin"
+    url: /setup-scholar
   - title: "Examples for Jekyll-scholar plugin"
     url: /examples-scholar
   # - title: "Sample Collections"
