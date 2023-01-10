@@ -129,6 +129,8 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="https://julianers.github.io/" >About</a>
             </li><li class="masthead__menu-item">
+              <a href="/setup-scholar" >Setting up the Jekyll-scholar plugin</a>
+            </li><li class="masthead__menu-item">
               <a href="/examples-scholar" >Examples for Jekyll-scholar plugin</a>
             </li></ul>
         
