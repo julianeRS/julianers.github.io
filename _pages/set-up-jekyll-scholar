@@ -1,0 +1,12 @@
+---
+title: Setting up Jekyll-scholar with github-pages
+layout: single
+permalink: /setup-scholar/
+author_profile: true
+---
+
+{{ setup.scholar }}
+
+<!doctype html>
+<html>
+<section>
