@@ -20,3 +20,9 @@ author_profile: true
 <p><b>Changes to Gemfile</b><br>Add the following line of code: <code>gem 'jekyll-scholar', group: jekyll_plugins</code></p>
 
 <p><b>Changes to configuration file</b><br>Add the following lines of code: <code>plugins:<br>&nsbp;- jekyll-scholar</code></p>
+
+<h3>Step 2: Set up github action</h3>
+
+<p>For security reasons, github does not, by default, allow the loading of just any kind of Jekyll plugin when building your website. 
+The solution is to set up a continuous integration pipeline to build the site on each push and publish the build output on the master branch.
+GitHub Actions allow us to do just that. We define our own build action
